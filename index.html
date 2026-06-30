@@ -1,95 +1,329 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>时事一点通</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>时事一点通-[时事政治]考试网-2027年时事政治热点新闻汇总</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Meta tags -->
+    <meta name="keywords" content="时事政治,2025时事政治,考研政治,2026年时事政治汇总,中考,高考,时事政治试题及答案,时政热点,时事新闻,时事政治app,事业单位考试,公务员考试">
+    <meta name="description" content="时事政治考试网，2025年时事政治试题及答案、2026年时事政治汇总资料、时事政治2027年必考题深受中考、考研、国家公务员、事业编考生和考试研究部门的信任与好评，是时政考试的必备资料。">
+    <!-- Open Graph -->
+    <meta property="og:title" content="时事一点通-[时事政治]考试网-2027年时事政治热点新闻汇总">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.ssydt.cn/">
+    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/2f1215fe1a5e2008.png">
+    <meta property="og:description" content="时事政治考试网，2025年时事政治试题及答案、2026年时事政治汇总资料、时事政治2027年必考题深受中考、考研、国家公务员、事业编考生和考试研究部门的信任与好评，是时政考试的必备资料。">
+    <meta property="og:site_name" content="时事一点通-[时事政治]考试网-2027年时事政治热点新闻汇总">
     <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://apps.alyjs.com/traffic/dbe0bd632f1215fe1a5e200836cf7820.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
             height: 100%;
             background: #fff;
-            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+            color: #2c2c2c;
+            -webkit-font-smoothing: antialiased;
         }
-        .wrapper {
-            display: table;
-            width: 100%;
-            height: 100%;
+        a { text-decoration: none; }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(180deg, #fff 0%, #fff5f5 40%, #ffe8e8 100%);
         }
-        .main-content {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
-        .icon-wrap {
-            margin-bottom: 30px;
-        }
-        .icon-wrap .fa {
-            color: #bbb;
-        }
-        .title {
-            font-size: 28px;
-            font-weight: 300;
-            color: #333;
-            letter-spacing: 2px;
-            margin-bottom: 16px;
-        }
-        .desc {
-            font-size: 15px;
-            color: #999;
-            line-height: 1.8;
-            margin-bottom: 0;
-        }
-        .divider {
-            width: 60px;
-            height: 1px;
-            background: #ddd;
-            margin: 24px auto;
-        }
-        .footer-icp {
+
+        /* ── 顶部光晕 ── */
+        .glow-top {
             position: absolute;
-            bottom: 24px;
-            left: 0;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(220,40,40,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* ── 主体 ── */
+        .page-body {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .hero {
+            max-width: 400px;
             width: 100%;
             text-align: center;
-            font-size: 13px;
-            color: #bbb;
         }
-        a {
-            color: inherit;
+
+        /* ── 图标 ── */
+        .icon-wrap {
+            margin-bottom: 22px;
+            position: relative;
+            display: inline-block;
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #d43030 0%, #c21818 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(200,30,30,0.25);
+            position: relative;
+            z-index: 1;
+        }
+        .icon-circle .fa {
+            color: #fff;
+            font-size: 34px;
+        }
+        .icon-ring {
+            position: absolute;
+            top: -8px; left: -8px; right: -8px; bottom: -8px;
+            border-radius: 24px;
+            border: 2px dashed rgba(200,30,30,0.15);
+            animation: spin-slow 20s linear infinite;
+            z-index: 0;
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        /* ── 标题 ── */
+        .app-title {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            background: linear-gradient(135deg, #c21818, #8b0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .app-sub {
+            font-size: 13px;
+            color: #c96;
+            letter-spacing: 4px;
+            margin-bottom: 32px;
+        }
+
+        /* ── 特性卡片行 ── */
+        .feature-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .feat-card {
+            flex: 1;
+            min-width: 90px;
+            max-width: 110px;
+            padding: 18px 8px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(200,30,30,0.08);
+            transition: all 0.3s;
+        }
+        .feat-card:hover {
+            border-color: rgba(200,30,30,0.25);
+            box-shadow: 0 4px 16px rgba(200,30,30,0.06);
+        }
+        .feat-card .fa {
+            font-size: 22px;
+            color: #c21818;
+            margin-bottom: 8px;
+        }
+        .feat-card .fc-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        .feat-card .fc-desc {
+            font-size: 11px;
+            color: #aaa;
+            margin-top: 4px;
+        }
+
+        /* ── 下载按钮 ── */
+        .btn-main {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 12px;
+            padding: 14px 0;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border-radius: 30px;
+            border: none;
+            color: #fff;
+            background: linear-gradient(135deg, #d43030, #c21818);
+            box-shadow: 0 6px 20px rgba(200,30,30,0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-main:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(200,30,30,0.4);
+            color: #fff;
+        }
+        .btn-main .fa {
+            margin-right: 6px;
+        }
+
+        .btn-ghost {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 16px;
+            padding: 14px 0;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border-radius: 30px;
+            border: 1.5px solid rgba(200,30,30,0.3);
+            color: #c21818;
+            background: transparent;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-ghost:hover {
+            background: rgba(200,30,30,0.05);
+            border-color: #c21818;
+            color: #c21818;
             text-decoration: none;
         }
-        a:link, a:visited, a:hover, a:active {
-            color: inherit;
+        .btn-ghost .fa {
+            margin-right: 6px;
+        }
+
+        .version-tag {
+            font-size: 12px;
+            color: #cca;
+            letter-spacing: 0.5px;
+        }
+
+        .version-tag span {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 10px;
+            background: rgba(200,30,30,0.06);
+            color: #c96;
+            margin: 0 3px;
+        }
+
+        /* ── 底部 ── */
+        .page-footer {
+            text-align: center;
+            padding: 22px 15px;
+        }
+        .page-footer .icp {
+            font-size: 12px;
+            color: #d4b0b0;
+            letter-spacing: 0.5px;
+        }
+        .page-footer .icp a {
+            color: #d4b0b0;
+        }
+        .page-footer .icp a:hover {
+            color: #c96;
+        }
+
+        /* ── 响应式 ── */
+        @media (max-width: 480px) {
+            .app-title { font-size: 26px; letter-spacing: 3px; }
+            .icon-circle { width: 64px; height: 64px; border-radius: 16px; }
+            .icon-circle .fa { font-size: 28px; }
+            .feature-row { gap: 8px; }
+            .feat-card { min-width: 75px; padding: 14px 6px; }
+            .feat-card .fc-title { font-size: 12px; }
+            .btn-main, .btn-ghost { max-width: 260px; font-size: 14px; padding: 12px 0; }
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="main-content">
-            <div class="container">
-                <h1 class="title"> ssydt.cn </h1>
-                <p class="desc">
-                    网站正在维护，预计 07.18日 恢复访问
-                </p>
-                <div class="divider"></div>
-                <p class="desc" style="font-size:13px;color:#bbb;">
-                    We apologize for the inconvenience.<br>
-                    The website is temporarily offline for maintenance.
-                </p>
+
+<div class="page">
+
+    <div class="page-body">
+        <div class="glow-top"></div>
+        <div class="hero">
+
+            <!-- 图标 + 旋转虚线环 -->
+            <div class="icon-wrap">
+                <div class="icon-circle">
+                    <i class="fa fa-newspaper-o"></i>
+                </div>
+                <div class="icon-ring"></div>
             </div>
-        </div>
-        <div class="footer-icp">
-            <span><a href="//beian.miit.gov.cn">鲁ICP备2025189343号-10</a></span>
+
+            <!-- 标题 -->
+            <h1 class="app-title">时事一点通</h1>
+            <p class="app-sub">洞 察 时 代 脉 搏</p>
+
+            <!-- 特性卡片 -->
+            <div class="feature-row">
+                <div class="feat-card">
+                    <i class="fa fa-bolt"></i>
+                    <div class="fc-title">实时</div>
+                    <div class="fc-desc">秒级推送</div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa fa-shield"></i>
+                    <div class="fc-title">权威</div>
+                    <div class="fc-desc">一手信源</div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa fa-eye"></i>
+                    <div class="fc-title">深度</div>
+                    <div class="fc-desc">多维解读</div>
+                </div>
+            </div>
+
+            <!-- 下载按钮 -->
+            <a href="#" class="btn-main">
+                <i class="fa fa-apple"></i> App Store 下载
+            </a>
+            <a href="#" class="btn-ghost">
+                <i class="fa fa-android"></i> Android 版下载
+            </a>
+
+            <p class="version-tag">
+                <span>v2.1.0</span> 纯净 · 无广告
+            </p>
+
         </div>
     </div>
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- 底部 ICP -->
+    <div class="page-footer">
+        <p class="icp">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备2025189343号-6</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
